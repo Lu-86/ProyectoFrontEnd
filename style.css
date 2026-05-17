@@ -81,7 +81,7 @@ html {
 }
 
 .auto:hover {
-    transform: translateY(-10px); /* Se levanta un poquito */
-    box-shadow: 0 10px 20px rgb(160, 160, 160); 
-    border-color: #ffffff;dow: 0 10px 15px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgb(211, 211, 211); 
+    border-color: #ffffff;
 }
