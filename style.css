@@ -1,11 +1,19 @@
-p ,h1,h2,h3,ol,li {
-    font-family: sans-serif;
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 800;
+    font-style: italic; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
 }
 
 body {
     background: radial-gradient(circle at center, #2b2b2b 0%, #121212 100%);
-    color: #f5f5f5;
     min-height: 100vh;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
+    line-height: 1.6;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -16,7 +24,6 @@ html {
     text-align: center;
 }
 
-
 .menu-de-autos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -26,7 +33,6 @@ html {
 .auto{
     text-decoration: none;
     color: inherit;
-
     background-color: #414141;
     color: white;
     overflow: hidden;
@@ -47,6 +53,23 @@ html {
     font-size: 0.9em;
     color: #ccc;
 }
+
+.material-symbols-outlined {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.material-symbols-outlined:hover {
+    box-shadow: 0 10px 20px rgba(235, 238, 77, 0.8);
+    border-color: yellow;
+    transform: translateY(-2px);
+}
+
+
 .menu-de-autos img{
     width: 100%;
     height: 200px;
@@ -93,7 +116,6 @@ html {
 table{
     width: 100%;
     border-collapse: collapse;
-    font-family: sans-serif;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
