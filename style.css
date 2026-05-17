@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#titulo{
+    text-align: center;
+}
+
+
+.menu-de-autos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+.auto{
+    text-decoration: none;
+    color: inherit;
+
+    background-color: #222;
+    color: white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+.autoinfo{
+    padding: 15px;
+    text-align: center   
+}
+.autoinfo h2 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.autoinfo p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+.menu-de-autos img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.auto:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
