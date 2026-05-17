@@ -24,6 +24,13 @@ html {
     text-align: center;
 }
 
+.link{
+    color: #2f659b;
+}
+.link:hover{
+    color: #549ee9;
+}
+
 .menu-de-autos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -111,6 +118,7 @@ html {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgb(211, 211, 211); 
     border-color: #ffffff;
+    filter: brightness(0.95) contrast(1.05);
 }
 
 table{
@@ -142,4 +150,13 @@ tr:hover {
 .auto {
     font-weight: bold;
     color: #333333;
+}
+
+#porsche img{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
+
 }
