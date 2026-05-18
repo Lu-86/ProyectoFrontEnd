@@ -322,6 +322,15 @@ tr:hover {
     table, th, td {
         font-size: 0.85rem;
     }
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    th, td {
+        white-space: normal;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
