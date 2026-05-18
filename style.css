@@ -162,8 +162,13 @@ tr:hover {
     width: 50%;
     border-radius: 12px;
     box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
-
-
+}
+#toyota img{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
 }
 
 .productos,.resenas,.contacto {
