@@ -37,9 +37,9 @@ html {
 
 .menu-de-autos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    padding: 50px;
 }
 .auto{
     text-decoration: none;
@@ -171,13 +171,13 @@ tr:hover {
     box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
 }
 
-.productos,.resenas,.contacto {
+.productos,.reseñas,.contacto {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.productos h2,.resenas h2,.contacto h2 {
+.productos h2,.reseñas h2,.contacto h2 {
     margin-bottom: 30px;
     text-align: center;
     font-size: 2rem;
@@ -210,13 +210,13 @@ tr:hover {
     border-color: rgba(247, 243, 40, 0.5);
 }
 
-.resenas-grid {
+.reseñas-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.resena-card {
+.reseña-card {
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 16px;
@@ -224,7 +224,7 @@ tr:hover {
     box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
 
-.resena-card h4 {
+.reseña-card h4 {
     margin-top: 0;
 }
 
@@ -233,6 +233,7 @@ tr:hover {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: start;
+
 }
 
 .contacto-info {
@@ -282,9 +283,10 @@ tr:hover {
     background: #549ee9;
 }
 
-.iraltitulo{
-    text-align: center;
+#navegacion a{
+    color: #003366;
 }
+
 
 @media (max-width: 600px) {
     h1 {
@@ -304,7 +306,7 @@ tr:hover {
     .video h3 {
         font-size: 1.25rem;
     }
-    .productos, .resenas, .contacto {
+    .productos, .reseñas, .contacto {
         padding: 20px 12px;
     }
     .productos-grid {
@@ -315,7 +317,7 @@ tr:hover {
         width: 100%;
         max-width: 420px;
     }
-    .resenas-grid {
+    .reseñas-grid {
         grid-template-columns: 1fr;
     }
     .contacto-contenedor {
@@ -353,7 +355,7 @@ tr:hover {
     .producto-card {
         width: 45%;
     }
-    .resenas-grid {
+    .reseñas-grid {
         grid-template-columns: repeat(2, minmax(240px, 1fr));
     }
     .contacto-contenedor {
