@@ -156,17 +156,12 @@ tr:hover {
     color: #333333;
 }
 
-#porsche img{
+#porsche img,#toyota img {
     margin: 0 auto;
     display: block;
     width: 50%;
-    border-radius: 12px;
-    box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
-}
-#toyota img{
-    margin: 0 auto;
-    display: block;
-    width: 50%;
+    max-width: 100%;
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
 }
@@ -323,7 +318,8 @@ tr:hover {
     .contacto-contenedor {
         grid-template-columns: 1fr;
     }
-    #porsche img {
+    #porsche img,
+    #toyota img {
         width: 80%;
     }
     table, th, td {
@@ -361,7 +357,8 @@ tr:hover {
     .contacto-contenedor {
         grid-template-columns: 1fr;
     }
-    #porsche img {
+    #porsche img,
+    #toyota img {
         width: 60%;
     }
 }
