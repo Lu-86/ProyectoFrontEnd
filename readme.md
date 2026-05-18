@@ -1,1 +1,1 @@
-ProyectoFrontEnd es una web orientada a mostrar una presentación profesional de automóviles, con secciones de inicio e información además de incluye una simulación de productos, reseñas y contacto.
+ProyectoFrontEnd es una web orientada a mostrar una presentación profesional de automóviles, con secciones de inicio e información además de incluir una simulación de productos, reseñas y contacto.
