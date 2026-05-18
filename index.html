@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=expand_circle_down" />
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,800&family=Inter:wght@400;600&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>Top autos</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏁</text></svg>">
+</head>
 <body>
 
     <header id="titulo">
+        <nav id="accesorapido">
+            <a href="#productos">Productos</a>
+            <a href="#resenas">Reseñas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
         <h1>Grandes leyendas</h1>
     </header>
 
@@ -197,7 +203,86 @@
             <a class="link" href="https://www.porsche.com/latin-america-es/_argentina_/models/911/911-gt3-models/911-gt3/" target="_blank" rel="noopener noreferrer">Ir al fabricante</a>
         </section>
 
+        <section id="productos" class="productos">
+            <h2>Productos</h2>
+            <div class="productos-grid">
+                <article class="producto-card">
+                    <h3>Paquete de Pista</h3>
+                    <p>Kit de mejoras y accesorios inspirados en el look racing clásico de los legendarios deportivos.</p>
+                    <a id="compra" href="#contacto">Comprar</a>
+                </article>
+                <article class="producto-card">
+                    <h3>Experiencia VR</h3>
+                    <p>Simulador de conducción con recorridos en los circuitos más icónicos del mundo.</p>
+                    <a id="compra" href="#contacto">Comprar</a>
+                </article>
+                <article class="producto-card">
+                    <h3>Tour Virtual</h3>
+                    <p>Recorrido interactivo por modelos históricos con datos técnicos y curiosidades.</p>
+                    <a id="compra" href="#contacto">Comprar</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="resenas" class="resenas">
+            <h2>Reseñas</h2>
+            <div class="resenas-grid">
+                <article class="resena-card">
+                    <h4>«Impresionante rendimiento»</h4>
+                    <p>El Nissan Skyline ofrece un balance perfecto entre potencia y control en carretera.</p>
+                </article>
+                <article class="resena-card">
+                    <h4>«Diseño legendario»</h4>
+                    <p>El Mazda RX-7 conserva su estética única y sigue siendo un icono del drifting.</p>
+            
+                </article>
+                <article class="resena-card">
+                    <h4>«Precisión extrema»</h4>
+                    <p>El Porsche 911 GT3 destaca por su agarre milimétrico y su capacidad en pista.</p>
+                </article>
+                <article class="resena-card">
+                    <h4>«Experiencia memorable»</h4>
+                    <p>Todos los modelos combinan historia, tecnología y emoción de conducción pura.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-contenedor">
+                <div class="contacto-info">
+                    <h3>Escríbenos</h3>
+                    <p>¿Estas interesad@ y queres comprar o saber mas? Completa el formulario y te responderemos pronto.</p>
+                    <p><strong>Email:</strong> info@tusitio.com</p>
+                    <p><strong>Teléfono:</strong> +54 9 11 31234-5678</p>
+                </div>
+                <form class="contacto-formulario"action="https://formspree.io/f/mqejkqyp"method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="iraltitulo">
+            <a href="#titulo">Volver al comienzo</a>
+        </div>
+        
+   
     </main>
-    <footer></footer>
+
+    
+    
+    
+
+    <footer>
+        <p>© 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
+

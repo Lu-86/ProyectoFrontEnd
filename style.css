@@ -1,3 +1,7 @@
+#accesorapido a{
+    color: gray;
+}
+
 h1 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 800;
@@ -159,4 +163,209 @@ tr:hover {
     border-radius: 12px;
     box-shadow: 0 1px 100px rgba(121, 121, 121, 0.25);
 
+
 }
+
+.productos,.resenas,.contacto {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos h2,.resenas h2,.contacto h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.productos-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+    width: 300px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+}
+
+.producto-card a{
+    color: #549ee9;
+}
+
+.producto-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(247, 243, 40, 0.5);
+}
+
+.resenas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.resena-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+.resena-card h4 {
+    margin-top: 0;
+}
+
+.contacto-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.contacto-info {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.contacto-formulario {
+    display: grid;
+    gap: 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.contacto-formulario label {
+    font-weight: 600;
+}
+
+.contacto-formulario input,.contacto-formulario textarea {
+    width: 95%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #666;
+    background: #1b1b1b;
+    color: #f0f0f0;
+}
+
+.contacto-formulario input::placeholder,.contacto-formulario textarea::placeholder {
+    color: #999;
+}
+
+.contacto-formulario button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #2f659b;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contacto-formulario button:hover {
+    background: #549ee9;
+}
+
+.iraltitulo{
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    .menu-de-autos {
+        gap: 20px;
+        padding: 15px;
+        grid-template-columns: 1fr;
+    }
+    .menu-de-autos img{
+        height: 160px;
+    }
+    .video {
+        padding: 20px 10px;
+    }
+    .video h3 {
+        font-size: 1.25rem;
+    }
+    .productos, .resenas, .contacto {
+        padding: 20px 12px;
+    }
+    .productos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .producto-card {
+        width: 100%;
+        max-width: 420px;
+    }
+    .resenas-grid {
+        grid-template-columns: 1fr;
+    }
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+    #porsche img {
+        width: 80%;
+    }
+    table, th, td {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .menu-de-autos {
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        padding: 20px;
+    }
+    .menu-de-autos img{
+        height: 180px;
+    }
+    .producto-card {
+        width: 45%;
+    }
+    .resenas-grid {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+    #porsche img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 901px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    .menu-de-autos img{
+        height: 200px;
+    }
+    .producto-card {
+        width: 300px;
+    }
+    .contacto-contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+    #porsche img {
+        width: 50%;
+    }
+}
+
+
